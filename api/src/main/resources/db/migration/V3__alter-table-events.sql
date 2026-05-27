@@ -1,0 +1,14 @@
+ALTER TABLE tb_events
+RENAME COLUMN cep TO postal_code;
+
+ALTER TABLE tb_events
+ADD COLUMN street VARCHAR(150);
+
+ALTER TABLE tb_events
+ADD COLUMN district VARCHAR(150);
+
+ALTER TABLE tb_events
+ADD COLUMN city VARCHAR(100);
+
+ALTER TABLE tb_events
+ADD COLUMN state VARCHAR(100);
